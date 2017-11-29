@@ -1,4 +1,4 @@
-import AssemblyKeys._ 
+// import AssemblyKeys._ 
 
 // Project name (artifact name in Maven)
 name := "blmg_itrd_bar_downloader"
@@ -22,18 +22,21 @@ autoScalaLibrary := true
 
 // library dependencies. (orginization name) % (project name) % (version)
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "1.9.1" % "test",
+  // "org.scalatest" %% "scalatest" % "1.9.1" % "test",
+  "org.scalatest" %% "scalatest" % "3.0.4" % "test",
   "junit" % "junit" % "4.11" % "test",
   "com.novocode" % "junit-interface" % "0.9" % "test->default",
   "org.mockito" % "mockito-core" % "1.9.5",
-  "com.github.nscala-time" %% "nscala-time" % "2.6.0",
-  "joda-time" % "joda-time" % "2.9.1"
+  // "com.github.nscala-time" %% "nscala-time" % "2.6.0",
+  "com.github.nscala-time" %% "nscala-time" % "2.16.0",
+  "joda-time" % "joda-time" % "2.9.1",
+  "mysql" % "mysql-connector-java" % "5.1.12"
 )
 
 javaOptions in run += "-Djava.library.path=/usr/lib/x86_64-linux-gnu/jni/"
 
-assemblySettings                                    
+// assemblySettings
 
-packSettings
+// packSettings
 
 enablePlugins(JavaAppPackaging, UniversalPlugin)
