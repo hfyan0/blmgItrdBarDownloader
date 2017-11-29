@@ -34,3 +34,5 @@ source $BLMGCOMMON
 
 
 java -jar $BIN -s "HIZ7 Index" -b 1 -o ~/haha -gmt 8
+java -jar $BIN -s "$sym HK Equity" -b 15 -o $M15ADJFOLDER/$sym".csv" -gmt 8 -adj # 15 min bar
+java -jar $BIN -s "$sym HK Equity" -b 60 -o $H1ADJFOLDER/$sym".csv" -gmt 8 -adj # 1 hour bar
