@@ -79,7 +79,8 @@ public class IntradayBarDownloader {
     // d_host = "192.168.91.28";
     d_host = "192.168.91.172";
     // d_host = "127.0.0.1";
-    d_port = 8194;
+    // d_port = 8194;
+    d_port = 10194;
     d_barInterval = 60;
     d_security = "IBM US Equity";
     d_eventType = "TRADE";

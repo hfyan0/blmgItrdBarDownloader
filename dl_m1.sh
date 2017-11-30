@@ -5,6 +5,12 @@ BLMGCOMMON=/home/$(whoami)/Dropbox/dataENF/blmg/common_path.sh
 
 source $BLMGCOMMON
 
+java -jar $BIN -s "HIZ7 Index" -b 1 -o ~/haha -gmt 8 # 1 min bar
+
+# java -jar $BIN -s "$sym HK Equity" -b 15 -o $M15ADJFOLDER/$sym".csv" -gmt 8 -adj # 15 min bar
+# java -jar $BIN -s "$sym HK Equity" -b 60 -o $H1ADJFOLDER/$sym".csv" -gmt 8 -adj # 1 hour bar
+
+
 # java -jar $BIN -s "HSI Index" -b 1 -o $M1ADJFOLDER/HSI".csv" -gmt 8
 
 # for sym in $SYMBOLLIST_HKIDX_M1
@@ -31,8 +37,3 @@ source $BLMGCOMMON
 # do
 #     java -jar $BIN -s "$sym Index" -b 1 -o $M1ADJFOLDER/$sym".csv" -gmt 0
 # done
-
-
-java -jar $BIN -s "HIZ7 Index" -b 1 -o ~/haha -gmt 8
-java -jar $BIN -s "$sym HK Equity" -b 15 -o $M15ADJFOLDER/$sym".csv" -gmt 8 -adj # 15 min bar
-java -jar $BIN -s "$sym HK Equity" -b 60 -o $H1ADJFOLDER/$sym".csv" -gmt 8 -adj # 1 hour bar
